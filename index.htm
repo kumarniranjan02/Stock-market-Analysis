@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- cdn for chart  -->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.stock.min.js"></script>
+</head>
+<body>
+   <div id="header">
+    <h1>Stock Market Analysis</h1>
+   </div>
+   <div id="container">
+    <div id="stock-details">
+        <div id="stock-chart">
+            <div id="chart"></div>
+            <div id="btn">
+                <button id="btn-1-m">1 month</button>
+                <button id="btn-3-m">3 month</button>
+                <button id="btn-1-y">1 year</button>
+                <button id="btn-5-y">5 year</button>
+            </div>
+        </div>
+        <div id="stock-summary">
+            <div id="Chart-company">
+                <div class="list">
+                   <div id="name">AAPL</div>
+                    <div id="percent" class="percent" style='margin:0 20px' >0.24493%</div>
+                    <div id="profit">$3.953</div>
+                </div>
+                <div class="min_max">
+                   <span id="max"></span>
+                   <span id="min"></span>
+                </div>
+            </div>
+            <p id="summary"></p>
+        </div>
+    </div>
+<!-- Stock company list -->
+    <div id="stock-list">
+    </div>
+   </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
